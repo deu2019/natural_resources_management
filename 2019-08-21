@@ -6,4 +6,5 @@
 
 Repository跟Unit Of Work设计模式可以先放一下，实现其他功能细节。
 
-
+15：55
+迁移service和viewmodels还比较顺利，考虑剥离identity server，作为一个独立的工程访问。
