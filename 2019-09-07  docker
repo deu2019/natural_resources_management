@@ -1,1 +1,30 @@
 这里做一些docker开发方面的记录 --15:44
+
+
+Docker常用命令
+
+环境: Win10x64 + Hyper-V + Docker 18.09.2 + kitematic
+下载链接: https://www.docker.com/get-started
+
+1.	Docker安装是否成功docker version
+2.	docker info
+3.	docker run hello-world
+ 
+4．察看正在运行的容器: docker ps 
+4.	察看所有的容器: docker ps –a  
+
+5.	察看所有镜像: docker image ls 
+
+6.	察看所有容器: docker container ls  
+
+7.	使用kitematic 
+
+8．拉取mssql 镜像
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-CU8-ubuntu
+
+9．拉取postgres镜像
+
+10．运行示例
+docker run -it --rm -p 8000:80 --name aspnetcore_sample mcr.microsoft.com/dotnet/core/samples:aspnetapp
+
+11．docker start 、docker stop、docker rm
